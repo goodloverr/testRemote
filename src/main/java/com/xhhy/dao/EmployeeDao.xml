@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xhhy.dao.EmployeeDao">
+
+	<!-- 配置映射关系 -->
+	<resultMap type="com.xhhy.domain.EmployeeBean" id="employee">
+		<id property="userId" column="user_id" />
+
+		<result property="employee_Id" column="employee_id" />
+		<result property="employee_Department" column="employee_department" />
+		<result property="employee_File_Number" column="employee_file_number" />
+		<result property="employee_Name" column="employee_name" />
+		<result property="employee_Sex" column="employee_sex" />
+		<result property="employee_Position" column="employee_position" />
+		<result property="employee_Post" column="employee_post" />
+		<result property="employee_Telphone" column="employee_telphone" />
+		<result property="employee_File_States" column="employee_file_states" />
+		<result property="employee_File_Times" column="employee_file_times" />
+	</resultMap>
+
+	<sql id="sql_count">employee_department,employee_file_number,employee_name,employee_sex,employee_position,employee_post,employee_telphone,employee_file_states,employee_file_times
+	</sql>
+	<select id="queryAll" parameterType="java.util.List" resultMap="employee">
+		select
+		<include refid="sql_count" />
+		from employee where employee_id between #{list[0]} and #{list[1]}
+	</select>
+
+	<select id="querydepartment" resultType="String">
+		select employee_department from employee group by employee_department
+	</select>
+	
+	<select id="queryemployee" parameterMap="map" resultMap="employee" >
+	select
+		<include refid="sql_count" />
+		from employee where 1=1
+		<if test="dep != null ">
+		AND employee_department = ${dep}
+		</if>
+		<if test="em_name != null">
+		AND employee_name = ${em_name}
+		</if>
+		<if test="file_state != null">
+		AND employee_file_states = ${file_state}
+		</if>
+		
+	</select>
+</mapper>

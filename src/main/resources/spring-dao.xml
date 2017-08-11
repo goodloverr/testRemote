@@ -21,13 +21,14 @@
 	<!-- session工厂 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
     	<property name="dataSource" ref="dataSource"></property>
-    	<property name="typeAliasesPackage" value="com.lin.domain"></property>
+    	<property name="typeAliasesPackage" value="com.xhhy.domain"></property>
     </bean>
       <!-- dao实例化，，配置dao -->
  	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
  		<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
- 		<property name="basePackage" value="com.lin.dao"></property>
- 	</bean>     
+ 		<property name="basePackage" value="com.xhhy.dao"></property>
+ 	</bean>    
+ 
 </beans>
 
 
