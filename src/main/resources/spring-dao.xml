@@ -13,10 +13,10 @@
            http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
      <!-- 数据源 -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://localhost:3306/mybatis"></property>
-		<property name="username" value="root"></property>
-		<property name="password" value="123"></property>
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
+		<property name="url" value="jdbc:oracle:thin:@192.168.0.143:1521:admin"></property>
+		<property name="username" value="system"></property>
+		<property name="password" value="admin"></property>
 	</bean>
 	<!-- session工厂 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
