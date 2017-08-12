@@ -38,6 +38,7 @@ public class EmployeeController {
 	
 	public ModelAndView EmployeeQuery (String dep,String em_name,String file_state,String timestart,String timeover){
 		Map query = util.employeequerylist(dep, em_name,file_state, timestart, timeover);
+		System.out.println(dep+"-"+ em_name+"-"+file_state+"-"+ timestart+"-"+timeover);
 		List<EmployeeBean> employees = employeeService.queryemployee(query);
 		ModelAndView mav = new ModelAndView("/datamsg/demo1/list.jsp");
 		mav.addObject("employees",employees);
