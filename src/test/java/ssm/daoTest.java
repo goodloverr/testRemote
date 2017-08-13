@@ -7,40 +7,35 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.xhhy.domain.PosinBean;
+import com.xhhy.service.PosinService;
+
+import junit.framework.TestCase;
 
 
-public class daoTest {
-	@Test
-	public void testdao(){
-		System.out.println("涓浗銆傘�傘�傘�俢hina");
-	}
+
+public class daoTest extends TestCase{
 	
-	
-	
-	
-	
-	
-	
-	
-	/*
 	@Autowired
-	private UserService userService;
+	private PosinService posinService;
 	
-	@Test
+	
 	public void testdao(){
-		List<UserBean> users = userService.selectAll();
-		for(UserBean u : users) {
-			System.out.println(u);
+		List<PosinBean> posins = posinService.selectPosinAll();
+		System.out.println(posins);
+		for(PosinBean p : posins){
+			System.out.println(p.getPosId()+""+p.getPosDept());
 		}
-		
 	}
 
-	public UserService getUserService() {
-		return userService;
-	}
-
-	public void setUserService(UserService userService) {
-		this.userService = userService;
-	}
 	
-*/}
+	
+	public PosinService getPosinService() {
+		return posinService;
+	}
+
+	public void setPosinService(PosinService posinService) {
+		this.posinService = posinService;
+	}
+
+}

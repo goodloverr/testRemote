@@ -1,6 +1,11 @@
-D:\html\资源\ssm\src\main\java\com\xhhy\service\EmployeeServiceImpl.java
-D:\html\资源\ssm\src\main\java\com\xhhy\domain\EmployeeBean.java
-D:\html\资源\ssm\src\main\java\com\xhhy\dao\EmployeeDao.java
-D:\html\资源\ssm\src\main\java\com\xhhy\controllers\EmployeeController.java
-D:\html\资源\ssm\src\main\java\com\xhhy\service\EmployeeService.java
-D:\html\资源\ssm\src\main\java\com\xhhy\util\Util.java
+E:\Git_Server\ssm\src\main\java\com\xhhy\domain\EmployeeBean.java
+E:\Git_Server\ssm\src\main\java\com\xhhy\util\Util.java
+E:\Git_Server\ssm\src\main\java\com\xhhy\dao\EmployeeDao.java
+E:\Git_Server\ssm\src\main\java\com\xhhy\controllers\wantedController.java
+E:\Git_Server\ssm\src\main\java\com\xhhy\controllers\EmployeeController.java
+E:\Git_Server\ssm\src\main\java\com\xhhy\service\PosinServiceImpl.java
+E:\Git_Server\ssm\src\main\java\com\xhhy\service\EmployeeServiceImpl.java
+E:\Git_Server\ssm\src\main\java\com\xhhy\service\EmployeeService.java
+E:\Git_Server\ssm\src\main\java\com\xhhy\domain\PosinBean.java
+E:\Git_Server\ssm\src\main\java\com\xhhy\dao\PosinDao.java
+E:\Git_Server\ssm\src\main\java\com\xhhy\service\PosinService.java

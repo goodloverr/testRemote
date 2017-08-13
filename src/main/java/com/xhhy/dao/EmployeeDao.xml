@@ -27,11 +27,11 @@
 		from employee where employee_id between #{list[0]} and #{list[1]}
 	</select>
 
-	<select id="querydepartment" resultType="String">
+	<!-- <select id="querydepartment" resultType="String">
 		select employee_department from employee group by employee_department
-	</select>
+	</select> -->
 	
-	<select id="queryemployee" parameterMap="map" resultMap="employee" >
+	<select id="queryemployee" parameterType="map" resultMap="employee" >
 	select
 		<include refid="sql_count" />
 		from employee where 1=1

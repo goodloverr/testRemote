@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.009" errors="0" skipped="0" tests="1" name="ssm.daoTest">
+<testsuite failures="0" time="0.02" errors="1" skipped="0" tests="1" name="ssm.daoTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Program Files\Java\jdk1.7.0_80\jre\bin"/>
     <property name="java.vm.version" value="24.80-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\Program Files\20170713_maven_TEST\ssm"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\Git_Server\ssm"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\Program Files\20170713_maven_TEST\ssm"/>
+    <property name="user.dir" value="E:\Git_Server\ssm"/>
     <property name="java.runtime.version" value="1.7.0_80-b15"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="D:\Program Files\Java\jdk1.7.0_80\jre\lib\endorsed"/>
@@ -27,9 +27,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="D:\Program Files\20170713_maven_TEST\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7664574570218990943.tmp"/>
+    <property name="classworlds.conf" value="D:\Program Files\20170713_maven_TEST\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3194122959323757904.tmp"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="D:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/Program Files/Java/jdk1.7.0_80/bin/../jre/bin/server;D:/Program Files/Java/jdk1.7.0_80/bin/../jre/bin;D:/Program Files/Java/jdk1.7.0_80/bin/../jre/lib/amd64;F:\oracle\product\10.2.0\db_1\bin;,;D:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\Program Files (x86)\SVN_installpack\Server\bin;D:\Program Files (x86)\SVN_installpack\bin;C:\Program Files\SourceGear\Common\DiffMerge\;E:\MAVEN_Server\apache-maven-3.5.0\bin;D:\Program Files (x86)\Git\cmd;D:\Program Files (x86)\bin;C:\Users\LyZonFull\AppData\Local\Microsoft\WindowsApps;;D:\Program Files (x86)\Eclipse_J2EE\eclipse_v4.5;;."/>
+    <property name="java.library.path" value="D:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/Program Files/Java/jdk1.7.0_80/bin/../jre/bin/server;D:/Program Files/Java/jdk1.7.0_80/bin/../jre/bin;D:/Program Files/Java/jdk1.7.0_80/bin/../jre/lib/amd64;F:\oracle\product\10.2.0\db_1\bin;,;D:\Program Files\Java\jdk1.7.0_80\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\Program Files (x86)\SVN_installpack\Server\bin;D:\Program Files (x86)\SVN_installpack\bin;C:\Program Files\SourceGear\Common\DiffMerge\;E:\MAVEN_Server\apache-maven-3.5.0\bin;D:\Program Files (x86)\Git\cmd;C:\Users\LyZonFull\AppData\Local\Microsoft\WindowsApps;;D:\Program Files (x86)\Eclipse_J2EE\eclipse_v4.5;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,5 +62,34 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.009" classname="ssm.daoTest" name="testdao"/>
+  <testcase time="0.02" classname="ssm.daoTest" name="testdao">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at ssm.daoTest.testdao(daoTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
 </testsuite>
